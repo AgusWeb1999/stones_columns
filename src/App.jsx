@@ -4,11 +4,10 @@ import FooterComponent from "./components/FooterComponent";
 import NavComponent from "./components/NavComponent";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
-import Projects from "./pages/projects";
-import Services from "./pages/services";
 import WhatsAppButton from "./components/WhatsAppButton"; 
 import BackImageHome from "./components/BackImageHome"; 
 import "./App.css";
+import Galery from './pages/galery';
 
 function App() {
   return (
@@ -41,8 +40,7 @@ function App() {
           />
           
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/Galery" element={<Galery />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <FooterComponent />

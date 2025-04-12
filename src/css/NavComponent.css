@@ -6,13 +6,12 @@
   align-items: center;
   padding: 1rem 2rem;
   background-color: transparent; /* Transparente */
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgb(254 253 251);
-  box-shadow: 0 8px 12px rgb(251 251 251);
+  background-color: rgb(245, 236, 217);
+  box-shadow: 0 8px 12px rgb(245, 236, 217);
 }
 
 .navbar .logo {
