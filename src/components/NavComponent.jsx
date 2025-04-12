@@ -10,7 +10,7 @@ const NavComponent = () => {
       </Link>      
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/services">Galery</Link></li>
+        <li><Link to="/Galery">Galery</Link></li>
         <li><Link to="/contact">Contact</Link></li>
       </ul>
     </nav>

@@ -1,6 +1,5 @@
 import React from "react";
 import "../css/about.css"; 
-import CarouselComponent from "../components/CarouselComponent"; 
 
 function About() {
   return (
