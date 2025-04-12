@@ -1,25 +1,17 @@
 .contact-page {
-    position: relative;
-    height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
     overflow: hidden;
   }
   
-.carousel-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
   
 .contact-content {
-    position: relative;
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para destacar el formulario */
     padding: 20px;
     border-radius: 10px;
     max-width: 35vw;
+    max-height: 80vh;
     margin: 0 auto;
     margin-top: 15vh;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -90,6 +82,74 @@
     background-color: #f8d7da;
     color: #721c24;
     border: 1px solid #f5c6cb;
+  }
+
+  .about-page {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh; 
+    box-sizing: border-box;
+    margin-top: 80px; 
+    gap: 20px; 
+  }
+  
+  .about-carousel {
+    flex: 1; 
+  }
+  
+  .about-carousel img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 5vh;
+  }
+  
+  .about-content {
+    flex: 1; 
+    text-align: left; 
+    font-family: 'Poppins', sans-serif;
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.483);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(32, 32, 32, 0.7);
+  }
+  
+  .about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 768px) {
+    .about-page {
+      flex-direction: column; 
+      gap: 20px; 
+    }
+  
+    .about-carousel{
+      display: none;
+    }
+
+    .about-content {
+      flex: none; 
+      width: 100%; 
+    }
+  
+    .about-content {
+      text-align: center;
+    }
   }
 
   @media (max-width: 768px) {

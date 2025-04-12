@@ -5,9 +5,6 @@ import CarouselComponent from "../components/CarouselComponent";
 function About() {
   return (
     <div className="about-page">
-      <div className="about-carousel">
-        <CarouselComponent />
-      </div>
       <div className="about-content">
         <h1>About Us</h1>
         <p>
