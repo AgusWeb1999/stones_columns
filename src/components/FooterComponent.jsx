@@ -5,11 +5,11 @@ function FooterComponent() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-logo">
-          <a href="#" className="logo">Stealframing Construction</a>
+        <div className="footer-text">
+          <p>Copyright © 2025 Stone Columns | All Rights Reserved</p>
         </div>
         <div className="footer-text">
-            <p>&copy; 2025 Steelframing Construction. All rights reserved.</p>
+            <p>&copy; Pompano Beach, FL 33064</p>
         </div>
       </div>
     </footer>
