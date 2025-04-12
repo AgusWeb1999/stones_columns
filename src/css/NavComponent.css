@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -9,25 +11,22 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente al pasar el mouse */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7);
+  background-color: rgb(254 253 251);
+  box-shadow: 0 8px 12px rgb(251 251 251);
 }
 
 .navbar .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif; /* Fuente amigable */
+  font-family: 'Great Vibes', cursive;
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
 .logo{
-  max-width: 18vh;
+  max-width: 20vh;
 }
 
-.logo_secundario{
-  display: none;
-}
 
 .navbar .nav-links {
   list-style: none;
@@ -41,17 +40,18 @@
 
 .navbar .nav-links a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: clamp(.7rem, 1.5vw, 1rem);
+  color: rgb(59 41 42);
+  font-size: clamp(1rem, 2vw, 1.5rem);
   font-weight: 500; /* Peso medio */
-  font-family: 'Poppins', sans-serif; /* Fuente amigable */
+  font-family: 'Great Vibes', cursive;
   letter-spacing: 0.5px; /* Espaciado entre letras */
   transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 .navbar .nav-links a:hover {
-  color: var(--accent-color); 
-  transform: scale(1.1); 
+  color: #000000; 
+  transform: scale(1.05);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -65,12 +65,9 @@
     overflow: hidden; 
     text-overflow: ellipsis; 
   }
-  .logo{
-    display: none;
-  }
   
-  .logo_secundario{
+  .logo{
     display: block;
-    width: clamp(1rem, 1.5rem, 2rem);
+    width: clamp(7rem, 12vw, 10rem);
   }
 }
