@@ -7,6 +7,7 @@ import WhatsAppButton from "./components/WhatsAppButton";
 import BackImageHome from "./components/BackImageHome"; 
 import "./App.css";
 import Galery from './pages/galery';
+import Service from "./components/ServiceComponent";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="/Galery" element={<Galery />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Service />
         <FooterComponent />
         <WhatsAppButton /> 
       </div>

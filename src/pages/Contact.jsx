@@ -66,7 +66,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div className="contact">
       <div className="back-image-home">
         <BackImageHome />
       </div>
@@ -75,44 +75,24 @@ const ContactForm = () => {
           <div className="about-content">
             <h1>About Us</h1>
             <p>
-              At Mazz Service LLC, we specialize in steelframing construction,
-              bathroom and kitchen renovations, and general construction
-              projects.
+              Stone Columns
             </p>
             <p>
-              With years of experience in the industry, we provide innovative
-              and efficient solutions to transform any space into a functional,
-              safe, and modern environment. Our team of highly skilled
-              professionals works with top-quality materials and the best
-              techniques to ensure flawless finishes in every project. From
-              structural work to the final details, we handle every phase with
-              precision and dedication.
+              Since 2009, Stone Columns has been at the forefront of transforming spaces in Pompano Beach, FL, and beyond with unmatched stone craftsmanship.
             </p>
             <p>
-              We also offer interior and exterior painting services,
-              guaranteeing a perfect aesthetic and long-lasting protection for
-              every construction.
+              As a family-owned construction company with nearly two decades of combined experience, we pride ourselves on delivering a diverse range of services, including custom stone columns, fireplace transformations, structural protection, outdoor living space enhancements, and stone tile services.
             </p>
             <p>
-              We take pride in our attention to detail, customer satisfaction,
-              and on-time project delivery. If you're looking for quality,
-              innovation, and reliability, we are your best choice.
+              We take our time, focus on the details and clean up thoroughly, leaving you with a picturesque feature that you can love for years to come.
             </p>
             <address>📍 Location: Pompano Beach, Florida.</address>
             <p>
-              📞 Contact: <a href="tel:7866420542">(786) 642-0542</a>
+              📞 Contact: <a href="tel:9546924835">(954) 692-4835</a>
             </p>
             <p>
-              📩 Email:{" "}
-              <a href="mailto:Mazzservicellc@gmail.com">
-                Mazzservicellc@gmail.com
-              </a>
-            </p>
-            <p>
-              <a href="/Contact">
                 Or complete our form <strong>here</strong> and I will contact
                 you shortly
-              </a>
             </p>
           </div>
         </div>

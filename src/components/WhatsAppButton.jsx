@@ -3,7 +3,7 @@ import "../css/WhatsAppButton.css";
 import whatsappLogo from "../images/whatsapp-logo.png";
 
 function WhatsAppButton() {
-  const whatsappLink = "https://wa.me/+17866420542"; 
+  const whatsappLink = "https://wa.me/+19546924835"; 
 
   return (
     <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="whatsapp-button">

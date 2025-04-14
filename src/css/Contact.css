@@ -1,7 +1,23 @@
+.contact {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: 4vh;
+  }
+
 .contact-page {
   display: grid;
   grid-template-columns: 1fr 1fr;
-    overflow: hidden;
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
+  margin: 4vh;
+  background-color: rgba(46, 32, 33, 0.673);
+  padding: 2vh;
+  min-width: 60vw;
+  max-width: 65vw;
+
+  border-radius: 1vh;
   }
   
   
@@ -12,8 +28,6 @@
     border-radius: 10px;
     max-width: 35vw;
     max-height: 80vh;
-    margin: 0 auto;
-    margin-top: 15vh;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
   
@@ -39,17 +53,19 @@
   
   #contact-form button {
     padding: 10px;
-    background-color: #F97316;
+    font-family: 'Great Vibes', cursive;
+    background-color: rgb(59, 41, 42);
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 1.7s ease;
   }
   
   #contact-form button:hover {
-    background-color: #ea580c;
+    background-color: rgb(100, 70, 70); 
+    transform: scale(1.05);
   }
 
   .form-label {
@@ -87,13 +103,12 @@
   .about-page {
     display: flex;
     flex-direction: row; 
+    position: relative;
     justify-content: center;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    min-height: 100vh; 
-    box-sizing: border-box;
-    margin-top: 80px; 
+    box-sizing: border-box; 
     gap: 20px; 
   }
   
@@ -116,9 +131,7 @@
     color: #fff; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.483);
     border-radius: 10px;
-    box-shadow: 1px 1px 10px rgba(32, 32, 32, 0.7);
   }
   
   .about-content h1 {
@@ -136,6 +149,7 @@
     .about-page {
       flex-direction: column; 
       gap: 20px; 
+      padding: 0;
     }
   
     .about-carousel{
@@ -150,12 +164,20 @@
     .about-content {
       text-align: center;
     }
-  }
 
-  @media (max-width: 768px) {
     .contact-content {
       max-width: 90vw;
-      margin-top: 15vh;
+      margin-top: 2vh;
       min-height: 60vh;
     }
+
+    .contact-page {
+      grid-template-columns: 1fr;
+      margin: 0;
+      width: auto;
+      padding: 1vh;
+      margin-bottom: 5vh;
+      }
+
+    
   }
