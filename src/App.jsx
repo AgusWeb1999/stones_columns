@@ -24,8 +24,8 @@ function App() {
                     <h1>Stone Column Services</h1>
                   </div>
                   <div className="principal-text">
-                    <h2>¿Looking for Stone Column Installation Services?</h2>
-                    <h3>¡We have over 20 years of experience in the industry to help you!</h3>
+                    <h2>Looking for Stone Column Installation Services?</h2>
+                    <h3>We have over 20 years of experience in the industry to help you!</h3>
                   </div>
                   <div className="princiapl-button">
                     <Link to="#services" className="btn">
