@@ -4,7 +4,24 @@ import { Link } from "react-router-dom";
 import "../css/galery.css"; 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import kitchenImage1 from "../images/kitchen remodel.jpg";
+import columnImage1 from "../images/column1.jpg";
+import columnImage2 from "../images/column2.jpg";
+import columnImage3 from "../images/column3.jpg";
+import columnImage4 from "../images/column4.jpg";
+import columnImage5 from "../images/column5.jpg";
+import columnImage6 from "../images/column6.jpg";
+import columnImage7 from "../images/column7.jpg";
+import columnImage8 from "../images/column8.jpg";
+import columnImage9 from "../images/column9.jpg";
+import columnImage10 from "../images/column10.jpg";
+import columnImage11 from "../images/column11.jpg";
+import columnImage13 from "../images/column13.jpg";
+import columnImage14 from "../images/column14.jpg";
+import columnImage15 from "../images/column15pool.jpg";
+import columnImage16 from "../images/column16pool.jpg";
+import columnImage17 from "../images/column18pool.jpg";
+import columnImage18 from "../images/column18pool.jpg";
+import columnImage19 from "../images/column19trabajando.jpg";
 
 const Galery = () => {
   const settings = {
@@ -20,40 +37,41 @@ const Galery = () => {
 
   const sliderData = [
     {
-      title: "Cocinas Modernas",
-      subtitle: "Diseños funcionales y elegantes",
+      title: "Stone Columns",
+      subtitle: "outdoor columns for your home",
       images: [
-        kitchenImage1,
-        kitchenImage1,
-        kitchenImage1,
-        kitchenImage1,
-        kitchenImage1,
-        kitchenImage1,
-      ],kitchenImage1
-    },
-    {
-      title: "Baños de Lujo",
-      subtitle: "Espacios acogedores y modernos",
-      images: [
-        kitchenImage1,
-        kitchenImage1,
-        kitchenImage1,
-        kitchenImage1,
-        kitchenImage1,
-        kitchenImage1,
+        columnImage9,
+        columnImage8,
+        columnImage11,
+        columnImage4,
+        columnImage5,
+        columnImage13,
       ],
     },
     {
-      title: "Salones Elegantes",
-      subtitle: "Estilo y confort en un solo lugar",
+      title: "For pool",
+      subtitle: "outdoor columns for your pool",
       images: [
-        kitchenImage1,
-        kitchenImage1,
-        kitchenImage1,
-        kitchenImage1,
-        kitchenImage1,
-        kitchenImage1,
-      ],kitchenImage1
+        columnImage7,
+        columnImage2,
+        columnImage1,
+        columnImage10,
+        columnImage3,
+        columnImage6,
+        columnImage18,
+      ],
+    },
+    {
+      title: "Another jobs",
+      subtitle: "ask about our other work",
+      images: [
+        columnImage14,
+        columnImage15,
+        columnImage16,
+        columnImage17,
+        columnImage19,
+      
+      ],
     },
   ];
   
@@ -79,10 +97,18 @@ const Galery = () => {
               </div>
             ))}
           </Slider>
+          
         </div>
+        
       ))}
+                        <div className="galery-button">
+                    <Link to="#contact" className="btn">
+                    Contact us
+                    </Link>
+                  </div>
     </div>
   );
 };
+
 
 export default Galery;

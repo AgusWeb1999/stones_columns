@@ -1,6 +1,6 @@
 .footer {
   position: fixed;
-  background-color: rgb(254 253 251); 
+  background-color: rgb(245, 236, 217); 
   color: rgb(59 41 42);
   padding: 1vh;
   text-align: center;
@@ -9,7 +9,7 @@
   height: 5vh;
   width: 100%;
   z-index: 1000;
-  box-shadow: 1px 1px 40px rgb(251 251 251);
+  box-shadow: 1px 1px 40px rgb(245, 236, 217);
 }
 
 .footer-container {
