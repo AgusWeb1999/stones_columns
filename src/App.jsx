@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import FooterComponent from "./components/FooterComponent";
 import NavComponent from "./components/NavComponent";
 import Contact from "./pages/Contact";
-import About from "./pages/About";
 import WhatsAppButton from "./components/WhatsAppButton"; 
 import BackImageHome from "./components/BackImageHome"; 
 import "./App.css";
@@ -39,7 +38,6 @@ function App() {
             
           />
           
-          <Route path="/about" element={<About />} />
           <Route path="/Galery" element={<Galery />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
