@@ -30,23 +30,62 @@
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* Contenedor de la imagen */
 .slider-image {
   padding: 10px;
   overflow: hidden; /* Esconde cualquier contenido que se salga del contenedor */
   cursor: pointer; /* Cambia el cursor a un puntero */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Imagen con efecto de zoom */
 .slider-image img {
-  width: 100%;
+  width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+  height: 300px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Recorta la imagen para que se ajuste al contenedor */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out; /* Transición suave para el zoom */
 }
 
-/* Efecto de zoom al pasar el mouse */
 .slider-image:hover img {
-  transform: scale(1.1); /* Agranda la imagen al 110% */
+  transform: scale(1.1); /* Agranda la imagen al 110% al pasar el mouse */
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+}
+.gallery-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.galery-button .btn {
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(254 253 251);
+  background-color: rgb(59, 41, 42); 
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.galery-button .btn:hover {
+  background-color: rgb(100, 70, 70); 
+  transform: scale(1.05); 
+}
+
+.slider-wrapper {
+  margin-bottom: 40px; /* Espaciado entre sliders */
+}
+
+.slider-title {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  margin-bottom: 15px;
+  color: #ffcc00;
+  text-align: left;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
