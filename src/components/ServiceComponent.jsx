@@ -1,6 +1,10 @@
 import React from "react";
 import "../css/Services.css";
 import { Link } from 'react-router-dom';
+import icon_column from "../images/columna-decorativa.png";
+import icon_pavers from "../images/adoquin.png";
+import icon_pool from "../images/piscina.png";
+
 
 function Service() {
   return (
@@ -12,24 +16,24 @@ function Service() {
         </p>
         <div className="service-cards">
           <div className="service-card">
-            <img src="./images/service1.jpg" alt="Service 1" />
-            <h2>Column Installation</h2>
+            <img src={icon_column} alt="Service Column" />
+            <h2>Stone Columns</h2>
             <p>
               Design and installation of stone columns for interiors and
               exteriors.
             </p>
           </div>
           <div className="service-card">
-            <img src="./images/service2.jpg" alt="Service 2" />
-            <h2>Restoration</h2>
+            <img src={icon_pavers} alt="Service Pavers" />
+            <h2>Pavers</h2>
             <p>
               Repair and restoration of old columns to bring back their
               splendor.
             </p>
           </div>
           <div className="service-card">
-            <img src="./images/service3.jpg" alt="Service 3" />
-            <h2>Custom Design</h2>
+            <img src={icon_pool} alt="Service Pool" />
+            <h2>For pool</h2>
             <p>Creation of unique columns tailored to your needs and style.</p>
           </div>
         </div>
