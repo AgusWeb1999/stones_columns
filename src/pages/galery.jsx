@@ -38,7 +38,7 @@ const Galery = () => {
   const sliderData = [
     {
       title: "Stone Columns",
-      subtitle: "outdoor columns for your home",
+      subtitle: "Outdoor columns for your home",
       images: [
         columnImage9,
         columnImage8,
@@ -50,7 +50,7 @@ const Galery = () => {
     },
     {
       title: "For pool",
-      subtitle: "outdoor columns for your pool",
+      subtitle: "Outdoor columns for your pool",
       images: [
         columnImage7,
         columnImage2,
@@ -63,7 +63,7 @@ const Galery = () => {
     },
     {
       title: "Another jobs",
-      subtitle: "ask about our other work",
+      subtitle: "Ask about our other work",
       images: [
         columnImage14,
         columnImage15,

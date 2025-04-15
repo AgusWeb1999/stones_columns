@@ -109,9 +109,6 @@
 }
 
 @media (max-width: 768px) {
-  .gallery-container{
-    padding: 2vh;
-  }
   .service-cards {
     display: grid;
     grid-template-columns: 1fr;

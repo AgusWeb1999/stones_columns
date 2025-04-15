@@ -2,7 +2,6 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  
 }
 
 .slider-wrapper {
@@ -13,12 +12,12 @@
 .slider-title {
   font-size: clamp(2rem, 3vw, 2.5rem);
   margin-bottom: 15px;
-  color: #ffcc00;
+  color: rgb(245, 236, 217);
   text-align: left;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgb(59 41 42);
   margin-top: 7vh;
 }
 
@@ -27,7 +26,7 @@
   margin-bottom: 25px;
   color: #e0e0e0;
   text-align: left;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   line-height: 1.4;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
@@ -62,14 +61,15 @@
 }
 
 .galery-button .btn {
-  position: absolute; /* Posiciona el botón de forma absoluta */
-  top: 5vh; /* Ajusta la distancia desde la parte superior */
-  left: 35vh; /* Ajusta la distancia desde la izquierda */
+  position: absolute; 
+  top: 2vh;
+  left: 40vh;
   display: inline-block;
-  padding: 1vh; /* Ajusta el relleno */
+  padding: 1vh; 
   font-size: 1.5rem;
   font-weight: 500;
   color: rgb(254 253 251);
+  font-family: 'Great Vibes', cursive;
   background-color: rgb(59, 41, 42); 
   text-decoration: none;
   border-radius: 5px;
@@ -84,34 +84,23 @@
 /* Media query para pantallas pequeñas (mobile) */
 @media (max-width: 768px) {
   .galery-button .btn {
-    top: 3vh; /* Ajusta la distancia desde la parte superior */
-    left: 9vh; /* Mueve el botón más cerca del borde izquierdo */
-    font-size: 1rem; /* Reduce el tamaño de la fuente */
-    padding: 0.8vh; /* Reduce el relleno */
+    top: 3vh;
+    left: 9vh;
+    font-size: 1rem; 
+    padding: 0.8vh; 
+  }
+
+  .gallery-container{
+    padding: 2vh;
   }
 }
 
-/* Media query para pantallas muy pequeñas (mobile pequeño) */
 @media (max-width: 480px) {
   .galery-button .btn {
-    top: 2vh; /* Ajusta la distancia desde la parte superior */
-    left: 20vh; /* Mueve el botón más cerca del borde izquierdo */
-    font-size: 0.9rem; /* Reduce aún más el tamaño de la fuente */
-    padding: 0.6vh; /* Reduce aún más el relleno */
+    top: 1vh;
+    left: 30vh;
+    font-size: 0.9rem; 
+    padding: 0.6vh; 
   }
 }
 
-.slider-wrapper {
-  margin-bottom: 40px; /* Espaciado entre sliders */
-}
-
-.slider-title {
-  font-size: clamp(2rem, 3vw, 2.5rem);
-  margin-bottom: 15px;
-  color: #ffcc00;
-  text-align: left;
-  font-family: 'Great Vibes', cursive;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
