@@ -1,14 +1,13 @@
 import React from "react";
 import "../css/Services.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import icon_column from "../images/columna-decorativa.png";
 import icon_pavers from "../images/adoquin.png";
 import icon_pool from "../images/piscina.png";
 
-
 function Service() {
   return (
-    <div>
+    <div className="service-container">
       <div className="service-content">
         <p className="service-description">
           We offer a wide range of services to meet your needs. Discover what we
@@ -27,8 +26,8 @@ function Service() {
             <img src={icon_pavers} alt="Service Pavers" />
             <h2>Pavers</h2>
             <p>
-              Repair and restoration of old columns to bring back their
-              splendor.
+              Enhance your pool area with elegant and durable stone columns
+              designed to complement your style and needs.
             </p>
           </div>
           <div className="service-card">
@@ -44,7 +43,9 @@ function Service() {
           inspired for your next project!
         </h2>
         <div className="gallery-button">
-          <Link to="/galery" className="btn">View Our Gallery</Link>
+          <Link to="/galery" className="btn">
+            View Our Gallery
+          </Link>
         </div>
       </div>
     </div>
