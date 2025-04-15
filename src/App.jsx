@@ -26,7 +26,7 @@ function App() {
                     <h1>Stone Column Services</h1>
                   </div>
                   <div className="principal-text">
-                    <h2>Looking for Stone Column Installation Services?</h2>
+                    <h2>Looking for Stone Column Services constructions?</h2>
                     <h3>
                       We have over 20 years of experience in the industry to
                       help you!
