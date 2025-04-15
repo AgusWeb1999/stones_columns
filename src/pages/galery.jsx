@@ -92,7 +92,9 @@ const Galery = () => {
             <Link to="/contact" className="btn">
               Contact us
             </Link>
+            </div>
           </div>
+          <div>
             <Slider {...settings}>
               {slider.images.map((image, i) => (
                 <div

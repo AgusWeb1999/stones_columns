@@ -5,8 +5,10 @@
 }
 
 .slider-wrapper {
-  position: relative; /* Necesario para que el botón se posicione dentro de este contenedor */
-  margin-bottom: 40px; /* Espaciado entre sliders */
+  display: grid;
+  justify-items: start;
+  margin-bottom: 40px; 
+  padding: 1vh;
 }
 
 .slider-title {
@@ -61,10 +63,6 @@
 }
 
 .galery-button .btn {
-  position: absolute; 
-  top: 2vh;
-  left: 40vh;
-  display: inline-block;
   padding: 1vh; 
   font-size: 1.5rem;
   font-weight: 500;
