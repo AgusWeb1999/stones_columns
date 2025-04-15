@@ -83,32 +83,33 @@ const Galery = () => {
   return (
     <div className="gallery-container">
       {sliderData.map((slider, index) => (
-        <div key={index} className="slider-wrapper">
-          <h1 className="slider-title">{slider.title}</h1>
-          <p className="slider-subtitle">{slider.subtitle}</p>
-          <Slider {...settings}>
-            {slider.images.map((image, i) => (
-              <div
-                key={i}
-                className="slider-image"
-                onClick={() => handleImageClick(image)}
-              >
-                <img src={image} alt={`Imagen ${i + 1} del ${slider.title}`} />
-              </div>
-            ))}
-          </Slider>
-          
+        <div key={index} className="slider-wrapper-with-button">
+          <div className="slider-wrapper">
+            
+            <h1 className="slider-title">{slider.title}</h1>
+            <p className="slider-subtitle">{slider.subtitle}</p>
+            <div className="galery-button">
+            <Link to="/contact" className="btn">
+              Contact us
+            </Link>
+          </div>
+            <Slider {...settings}>
+              {slider.images.map((image, i) => (
+                <div
+                  key={i}
+                  className="slider-image"
+                  onClick={() => handleImageClick(image)}
+                >
+                  <img src={image} alt={`Imagen ${i + 1} del ${slider.title}`} />
+                </div>
+              ))}
+            </Slider>
+          </div>
+
         </div>
-        
       ))}
-                        <div className="galery-button">
-                    <Link to="#contact" className="btn">
-                    Contact us
-                    </Link>
-                  </div>
     </div>
   );
 };
-
 
 export default Galery;

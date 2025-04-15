@@ -34,7 +34,7 @@ function App() {
                   </div>
                   <div className="princiapl-button">
                     <ScrollLink
-                      to="services"
+                      to="Galery"
                       smooth={true}
                       duration={500}
                       className="btn"
@@ -43,7 +43,7 @@ function App() {
                     </ScrollLink>
                   </div>
                 </div>
-                <div id="services">
+                <div id="Galery">
                   <Service />
                 </div>
               </div>

@@ -2,9 +2,11 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  
 }
 
 .slider-wrapper {
+  position: relative; /* Necesario para que el botón se posicione dentro de este contenedor */
   margin-bottom: 40px; /* Espaciado entre sliders */
 }
 
@@ -17,6 +19,7 @@
   font-weight: 600;
   letter-spacing: 1px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 7vh;
 }
 
 .slider-subtitle {
@@ -59,8 +62,11 @@
 }
 
 .galery-button .btn {
+  position: absolute; /* Posiciona el botón de forma absoluta */
+  top: 5vh; /* Ajusta la distancia desde la parte superior */
+  left: 35vh; /* Ajusta la distancia desde la izquierda */
   display: inline-block;
-  padding: 10px;
+  padding: 1vh; /* Ajusta el relleno */
   font-size: 1.5rem;
   font-weight: 500;
   color: rgb(254 253 251);
@@ -73,6 +79,26 @@
 .galery-button .btn:hover {
   background-color: rgb(100, 70, 70); 
   transform: scale(1.05); 
+}
+
+/* Media query para pantallas pequeñas (mobile) */
+@media (max-width: 768px) {
+  .galery-button .btn {
+    top: 3vh; /* Ajusta la distancia desde la parte superior */
+    left: 9vh; /* Mueve el botón más cerca del borde izquierdo */
+    font-size: 1rem; /* Reduce el tamaño de la fuente */
+    padding: 0.8vh; /* Reduce el relleno */
+  }
+}
+
+/* Media query para pantallas muy pequeñas (mobile pequeño) */
+@media (max-width: 480px) {
+  .galery-button .btn {
+    top: 2vh; /* Ajusta la distancia desde la parte superior */
+    left: 20vh; /* Mueve el botón más cerca del borde izquierdo */
+    font-size: 0.9rem; /* Reduce aún más el tamaño de la fuente */
+    padding: 0.6vh; /* Reduce aún más el relleno */
+  }
 }
 
 .slider-wrapper {
