@@ -18,7 +18,7 @@ function Service() {
             <img src={icon_column} alt="Service Column" />
             <h2>Stone Columns</h2>
             <p>
-              Design and installation of stone columns for interiors and
+              Design and construction of stone columns for interiors and
               exteriors.
             </p>
           </div>
