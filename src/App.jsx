@@ -1,12 +1,13 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import { Link } from "react-router-dom"; 
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 import FooterComponent from "./components/FooterComponent";
 import NavComponent from "./components/NavComponent";
 import Contact from "./pages/Contact";
-import WhatsAppButton from "./components/WhatsAppButton"; 
-import BackImageHome from "./components/BackImageHome"; 
+import WhatsAppButton from "./components/WhatsAppButton";
+import BackImageHome from "./components/BackImageHome";
 import "./App.css";
-import Galery from './pages/galery';
+import Galery from "./pages/galery";
 import Service from "./components/ServiceComponent";
 
 function App() {
@@ -26,29 +27,37 @@ function App() {
                   </div>
                   <div className="principal-text">
                     <h2>Looking for Stone Column Installation Services?</h2>
-                    <h3>We have over 20 years of experience in the industry to help you!</h3>
+                    <h3>
+                      We have over 20 years of experience in the industry to
+                      help you!
+                    </h3>
                   </div>
                   <div className="princiapl-button">
-                    <Link to="#services" className="btn">
-                    View Our Services
-                    </Link>
+                    <ScrollLink
+                      to="services"
+                      smooth={true}
+                      duration={500}
+                      className="btn"
+                    >
+                      View Our Services
+                    </ScrollLink>
                   </div>
+                </div>
+                <div id="services">
+                  <Service />
                 </div>
               </div>
             }
-            
           />
-          
+
           <Route path="/Galery" element={<Galery />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Service />
         <FooterComponent />
-        <WhatsAppButton /> 
+        <WhatsAppButton />
       </div>
     </Router>
   );
 }
 
 export default App;
-
