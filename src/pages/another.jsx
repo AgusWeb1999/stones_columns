@@ -1,24 +1,15 @@
 import React from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom"; 
-import "../css/galery.css"; 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import columnImage1 from "../images/column1.jpg";
-import columnImage2 from "../images/column2.jpg";
-import columnImage3 from "../images/column3.jpg";
-import columnImage4 from "../images/column4.jpg";
-import columnImage5 from "../images/column5.jpg";
-import columnImage6 from "../images/column6.jpg";
-import columnImage7 from "../images/column7.jpg";
-import columnImage8 from "../images/column8.jpg";
-import columnImage9 from "../images/column9.jpg";
-import columnImage10 from "../images/column10.jpg";
-import columnImage11 from "../images/column11.jpg";
-import columnImage13 from "../images/column13.jpg";
-import columnImage18 from "../images/column18pool.jpg";
+import columnImage14 from "../images/column14.jpg";
+import columnImage15 from "../images/column15pool.jpg";
+import columnImage16 from "../images/column16pool.jpg";
+import columnImage17 from "../images/column18pool.jpg";
+import columnImage19 from "../images/column19trabajando.jpg";
 
-const Galery = () => {
+const another = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -31,32 +22,19 @@ const Galery = () => {
   };
 
   const sliderData = [
+
     {
-      title: "Stone Columns",
-      subtitle: "Outdoor columns for your home",
+      title: "Another jobs",
+      subtitle: "Ask about our other work",
       images: [
-        columnImage9,
-        columnImage8,
-        columnImage11,
-        columnImage4,
-        columnImage5,
-        columnImage13,
+        columnImage14,
+        columnImage15,
+        columnImage16,
+        columnImage17,
+        columnImage19,
+      
       ],
     },
-    {
-      title: "For pool",
-      subtitle: "Outdoor columns for your pool",
-      images: [
-        columnImage7,
-        columnImage2,
-        columnImage1,
-        columnImage10,
-        columnImage3,
-        columnImage6,
-        columnImage18,
-      ],
-    },
-  
   ];
   
 
@@ -98,4 +76,4 @@ const Galery = () => {
   );
 };
 
-export default Galery;
+export default another;
