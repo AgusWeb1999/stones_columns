@@ -69,6 +69,11 @@ const another = () => {
               ))}
             </Slider>
           </div>
+          <div className="galery-button">
+            <Link to="/contact" className="btn">
+              Contact us
+            </Link>
+          </div>
 
         </div>
       ))}

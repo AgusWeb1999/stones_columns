@@ -53,11 +53,6 @@ const balusters = () => {
             
             <h1 className="slider-title">{slider.title}</h1>
             <p className="slider-subtitle">{slider.subtitle}</p>
-            <div className="galery-button">
-            <Link to="/contact" className="btn">
-              Contact us
-            </Link>
-            </div>
           </div>
           <div>
             <Slider {...settings}>
@@ -72,7 +67,11 @@ const balusters = () => {
               ))}
             </Slider>
           </div>
-
+          <div className="galery-button">
+            <Link to="/contact" className="btn">
+              Contact us
+            </Link>
+          </div>
         </div>
       ))}
     </div>
