@@ -9,6 +9,8 @@ import BackImageHome from "./components/BackImageHome";
 import "./App.css";
 import Galery from "./pages/galery";
 import Service from "./components/ServiceComponent";
+import Balusters from "./pages/balusters"; // Asegúrate de que la ruta sea correcta
+import Another from "./pages/another"; // Cambia la importación a mayúscula si es necesario
 
 function App() {
   return (
@@ -52,6 +54,8 @@ function App() {
 
           <Route path="/Galery" element={<Galery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/balusters" element={<Balusters />} />
+          <Route path="/another" element={<Another />} /> {/* Cambiado a mayúscula */}
         </Routes>
         <FooterComponent />
         <WhatsAppButton />

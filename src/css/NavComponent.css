@@ -26,7 +26,6 @@
   max-width: 20vh;
 }
 
-
 .navbar .nav-links {
   list-style: none;
   display: flex;
@@ -36,6 +35,9 @@
   justify-content: end;
 }
 
+.navbar .nav-links li {
+  position: relative; /* Necesario para el dropdown */
+}
 
 .navbar .nav-links a {
   text-decoration: none;
@@ -53,7 +55,45 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* Estilos del dropdown */
+.navbar .nav-links .dropdown-menu {
+  display: none; /* Oculto por defecto */
+  position: absolute;
+  top: 100%; /* Justo debajo del elemento padre */
+  left: 0;
+  background-color: rgb(245, 236, 217);
+  border: 1px solid #ddd;
+  list-style: none;
+  padding: 10px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  white-space: nowrap;
+}
 
+.navbar .nav-links .dropdown-menu li {
+  padding: 5px 20px;
+}
+
+.navbar .nav-links .dropdown-menu li a {
+  text-decoration: none;
+  color: rgb(59 41 42);
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  font-weight: 400;
+  font-family: 'Great Vibes', cursive;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar .nav-links .dropdown-menu li a:hover {
+  color: #000000;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Mostrar el dropdown al pasar el mouse */
+.navbar .nav-links li:hover .dropdown-menu {
+  display: block;
+}
+
+/* Estilos responsivos */
 @media (max-width: 768px) {
   .navbar {
     display: grid;
@@ -65,8 +105,24 @@
     text-overflow: ellipsis; 
   }
   
-  .logo{
+  .logo {
     display: block;
     width: clamp(7rem, 12vw, 10rem);
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navbar .nav-links .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+  }
+
+  .navbar .nav-links .dropdown-menu li {
+    padding: 5px 10px;
   }
 }
