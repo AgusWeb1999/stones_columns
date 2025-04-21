@@ -9,10 +9,13 @@ import BackImageHome from "./components/BackImageHome";
 import "./App.css";
 import Galery from "./pages/galery";
 import Service from "./components/ServiceComponent";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="app">
         <NavComponent />
         <BackImageHome />
