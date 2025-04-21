@@ -164,6 +164,9 @@
     .about-content {
       text-align: center;
     }
+    .contact{
+      justify-content: center;
+    }
 
     .contact-content {
       max-width: 90vw;
