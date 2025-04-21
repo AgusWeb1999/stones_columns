@@ -9,12 +9,14 @@ import BackImageHome from "./components/BackImageHome";
 import "./App.css";
 import Galery from "./pages/galery";
 import Service from "./components/ServiceComponent";
+import ScrollToTop from "./components/ScrollToTop";
 import Balusters from "./pages/balusters"; // Asegúrate de que la ruta sea correcta
 import Another from "./pages/another"; // Cambia la importación a mayúscula si es necesario
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="app">
         <NavComponent />
         <BackImageHome />
