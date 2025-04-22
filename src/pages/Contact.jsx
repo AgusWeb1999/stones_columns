@@ -25,23 +25,51 @@ const ContactForm = () => {
     }, 5000);
   };
 
+  const resizeImage = (file, maxSizeKB = 50) => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+
+      reader.onload = (event) => {
+        const img = new Image();
+        img.onload = () => {
+          const canvas = document.createElement("canvas");
+          const ctx = canvas.getContext("2d");
+
+          canvas.width = img.width;
+          canvas.height = img.height;
+
+          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+          let quality = 0.9;
+          let base64Image = canvas.toDataURL("image/jpeg", quality);
+
+          while (base64Image.length / 1024 > maxSizeKB && quality > 0.1) {
+            quality -= 0.1;
+            base64Image = canvas.toDataURL("image/jpeg", quality);
+          }
+
+          resolve(base64Image);
+        };
+
+        img.onerror = (error) => reject(error);
+        img.src = event.target.result;
+      };
+
+      reader.onerror = (error) => reject(error);
+      reader.readAsDataURL(file);
+    });
+  };
+
   const onSubmit = async (data) => {
     try {
       setDisabled(true);
 
-      // Leer el archivo de imagen y convertirlo a base64
       let base64Image = "";
       if (data.image && data.image[0]) {
         const file = data.image[0];
-        base64Image = await new Promise((resolve, reject) => {
-          const reader = new FileReader();
-          reader.onload = () => resolve(reader.result);
-          reader.onerror = (error) => reject(error);
-          reader.readAsDataURL(file);
-        });
+        base64Image = await resizeImage(file, 50); // Reducir a 50 KB
       }
 
-      // Enviar los datos a través de EmailJS
       await emailjs.send(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
@@ -55,7 +83,7 @@ const ContactForm = () => {
         import.meta.env.VITE_PUBLIC_KEY
       );
 
-      toggleAlert("¡The form was submitted successfully!", "success"); // Mensaje de éxito
+      toggleAlert("¡The form was submitted successfully!", "success");
     } catch (e) {
       console.error(e);
       toggleAlert("Something went wrong.", "danger");
@@ -74,25 +102,31 @@ const ContactForm = () => {
         <div className="about-page">
           <div className="about-content">
             <h1>About Us</h1>
+            <p>Stone Columns</p>
             <p>
-              Stone Columns
+              Since 2009, Stone Columns has been at the forefront of
+              transforming spaces in Pompano Beach, FL, and beyond with unmatched
+              stone craftsmanship.
             </p>
             <p>
-              Since 2009, Stone Columns has been at the forefront of transforming spaces in Pompano Beach, FL, and beyond with unmatched stone craftsmanship.
+              As a family-owned construction company with nearly two decades of
+              combined experience, we pride ourselves on delivering a diverse
+              range of services, including custom stone columns, fireplace
+              transformations, structural protection, outdoor living space
+              enhancements, and stone tile services.
             </p>
             <p>
-              As a family-owned construction company with nearly two decades of combined experience, we pride ourselves on delivering a diverse range of services, including custom stone columns, fireplace transformations, structural protection, outdoor living space enhancements, and stone tile services.
-            </p>
-            <p>
-              We take our time, focus on the details and clean up thoroughly, leaving you with a picturesque feature that you can love for years to come.
+              We take our time, focus on the details and clean up thoroughly,
+              leaving you with a picturesque feature that you can love for years
+              to come.
             </p>
             <address>📍 Location: Pompano Beach, Florida.</address>
             <p>
               📞 Contact: <a href="tel:9546924835">(954) 692-4835</a>
             </p>
             <p>
-                Or complete our form <strong>here</strong> and I will contact
-                you shortly
+              Or complete our form <strong>here</strong> and I will contact you
+              shortly
             </p>
           </div>
         </div>
@@ -195,7 +229,7 @@ const ContactForm = () => {
                   id="image"
                   {...register("image")}
                   className="form-input"
-                  accept="image/*" // Asegurarse de aceptar solo imágenes
+                  accept="image/*"
                 />
               </div>
             </div>

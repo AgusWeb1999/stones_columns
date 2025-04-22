@@ -16,6 +16,22 @@ const another = () => {
     speed: 500,
     slidesToShow: 3, // Mostrar 3 imágenes al mismo tiempo
     slidesToScroll: 1, // Desplazarse de una en una
+    responsive: [
+      {
+        breakpoint: 768, // Para pantallas menores a 768px
+        settings: {
+          slidesToShow: 2, // Muestra 2 imágenes
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480, // Para pantallas menores a 480px
+        settings: {
+          slidesToShow: 1, // Muestra 1 imagen
+          slidesToScroll: 1,
+        },
+      },
+    ],
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: true, // Flechas para navegar
